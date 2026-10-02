@@ -44,8 +44,8 @@ function ejercicio2() {
 Mejore el programa anterior haciendo que cuando la diferencia sea exactamente un año, escriba la frase en singular: */
 
 function ejercicio3() {
-    let añoActual = prompt("Introduce el año actual")
-    let añoCualquiera = prompt("Introduce un año cualquiera")
+    let añoActual = parseInt(prompt("Introduce el año actual"))
+    let añoCualquiera = parseInt(prompt("Introduce un año cualquiera"))
     if (añoActual > añoCualquiera) {
         let años = añoActual - añoCualquiera
         solu.textContent = "Han pasado "+años+" años"
