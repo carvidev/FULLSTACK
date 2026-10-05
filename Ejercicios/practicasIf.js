@@ -96,3 +96,28 @@ function ejercicio5() {
         solu.textContent = "Hay 2 números iguales"
     }
 }    
+
+/* 6. Escriba un programa que pida un año y que escriba si es bisiesto o no.
+Se recuerda que los años bisiestos son múltiplos de 4, pero los múltiplos de 100 no lo son,
+aunque los múltiplos de 400 sí. */
+
+function ejercicio6() {
+    let agno = parseInt(prompt("Introduce un año"))
+
+    if (agno % 100) {
+        solu.textContent = "El "+agno+" no es bisiesto"
+    }
+    else (agno % 4 || agno % 400);{
+        solu.textContent = "El "+agno+" es bisiesto"
+    }
+}
+
+/* 7. Escriba un programa que pida los coeficientes de una ecuación de primer grado (a x + b = 0)
+y escriba la solución.
+Se recuerda que una ecuación de primer grado puede no tener solución, tener una solución
+única, o que todos los números sean solución. Se recuerda que la fórmula de las soluciones
+es x = -b / a */
+
+function ejercicio7() {
+    
+}
