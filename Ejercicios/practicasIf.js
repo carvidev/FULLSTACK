@@ -104,11 +104,15 @@ aunque los múltiplos de 400 sí. */
 function ejercicio6() {
     let agno = parseInt(prompt("Introduce un año"))
 
-    if (agno % 100) {
-        solu.textContent = "El "+agno+" no es bisiesto"
-    }
-    else (agno % 4 || agno % 400);{
+    resto4 = agno % 4
+    resto100 = agno % 100
+    resto400 = agno % 400
+
+    if (resto4 == 0 && resto100 != 0 && resto400 == 0) {
         solu.textContent = "El "+agno+" es bisiesto"
+    }
+    else {
+        solu.textContent = "El "+agno+" no es bisiesto"
     }
 }
 
@@ -119,5 +123,5 @@ Se recuerda que una ecuación de primer grado puede no tener solución, tener un
 es x = -b / a */
 
 function ejercicio7() {
-    
+
 }
