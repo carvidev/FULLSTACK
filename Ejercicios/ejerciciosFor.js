@@ -62,3 +62,53 @@ function ejercicio4 () {
     }
 }
 
+/* 5. Escriba un programa que pregunte cuántos números se van a introducir, pida esos números y
+escriba cuántos negativos ha introducido. */
+
+function ejercicio5 () {
+    let cantidad = parseInt(prompt("¿Cuantos números vas a introducir?"))
+
+    for (let i = 1; i <= cantidad; i++) {
+        let numero = parseInt(prompt("Introduce el número" +i))
+
+        if (numero < 0) {
+            solu.innerHTML += "El número "+numero+" es negativo<br>"
+        }
+    }
+}
+
+/* 6. Escriba un programa que pregunte cuántos números se van a introducir, pida esos números,
+y diga al final cuántos han sido pares y cuántos impares. */
+
+function ejercicio6 () {
+    let cantidad = parseInt(prompt("¿Cuantos números vas a introducir?"))
+
+    for (let i = 1; i <= cantidad; i++) {
+        let numero = parseInt(prompt("Introduce el número"))
+
+        if (i % 2 == 0) {
+            solu.innerHTML += "El número "+i+" es par<br>"
+        }    
+        else { 
+            solu.innerHTML += "El número "+i+" es impar<br>"
+        }    
+    }
+}
+
+/* 7. Escriba un programa que pida un número entero mayor que 1 y que escriba si el número es
+un número primo o no. */
+
+
+
+/* 8. Escriba un programa que pregunte cuantos números se van a introducir, pida esos números
+(que puedan ser decimales) y calcule su suma. */
+
+/* 9. Escriba un programa que pida dos números enteros y escriba la suma de todos los enteros
+desde el primer número hasta el segundo. */
+
+
+
+/* 10. Escriba un programa que pregunte cuántos números se van a introducir, pida esos números,
+y escriba el mayor, el menor y la media aritmética.
+Se recuerda que la media aritmética de un conjunto de valores es la suma de esos valores
+dividida por la cantidad de valores. */
