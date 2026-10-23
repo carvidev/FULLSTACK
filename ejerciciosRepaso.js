@@ -37,11 +37,14 @@ function ejercicio3() {
         }
 }
 
-/* 4. Escribe un documento HTML empleando JavaScript que pida un número en una
-ventana emergente y muestre en una tabla, una lista ordenada (<ol><li>) con los
-números impares del 1 hasta ese número, y una lista no ordenada (<ul><li>) con los
-números pares del 1 hasta ese número */
+/* 4. Escribe un documento HTML empleando JavaScript que pida un número en una ventana emergente y muestre en una tabla, una lista ordenada (<ol><li>) con los números impares del 1 hasta ese número, y una lista no ordenada (<ul><li>) con los números pares del 1 hasta ese número */
 
 function ejercicio4 () {
 
+}
+
+/* 5. Crea un script que muestre los números enteros del 1 al 5, con sus secuencias anteriores. */
+
+function ejercicio5 () {
+    
 }
