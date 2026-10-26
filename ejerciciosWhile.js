@@ -40,7 +40,7 @@ function ejercicio3 () {
     let objetivo = parseInt(prompt("¿Cuánto dinero quieres ahorrar?"))
     let ahorrado = 0
 
-    while (ahorrado < objetivo) {
+    while (ahorrado <= objetivo) {
         let ahorro = parseFloat(prompt("¿Cuánto dinero ahorras esta vez?"))
         
         ahorrado = ahorrado + ahorro
@@ -54,7 +54,7 @@ function ejercicio4 () {
     let num1 = parseInt(prompt("Introduce un número"))
     let num2 = parseInt(prompt("Introduce otro número"))
 
-    while (num2 < num1) {
+    while (num2 <= num1) {
         num2 = parseInt(prompt("Introduce otro número"))
     }
     solu.textContent = "Has introducido los números "+num1+" y "+num2+"."
@@ -144,5 +144,20 @@ function ejercicio9 () {
 /* 10. Escriba un programa para jugar a adivinar un número (el ordenador "piensa" el número y el usuario tiene que adivinarlo). El programa empieza pidiendo entre qué números está el número a adivinar, se "inventa" un número al azar y después el usuario va probando valores y el programa va diciendo si son demasiado grandes o pequeños */
 
 function ejercicio10 () {
-    
+    let min = parseInt(prompt("Introduce el número mínimo entre los que adivinar"))
+    let max = parseInt(prompt("Introduce el número máximo entre los que adivinar"))
+    let oculto = Math.floor(Math.random() * (max - min +1)) + min
+    let intento
+
+    while (intento != oculto) {
+        intento = parseInt(prompt("Introduce un número"))
+
+        if (intento < oculto) {
+            alert("Mi número es mayor que "+intento+".")
+        } else if (intento > oculto){
+            alert("Mi número es menor que "+intento+".")
+        } else {
+            solu.textContent = "¡El número "+intento+" es correcto!"
+        }
+    }
 }

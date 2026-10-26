@@ -31,16 +31,23 @@ function ejercicio3() {
     let solu = document.getElementById("solucion")
 
     for (let i = 1; i <= 20; i++) {
-            let elemento = document.createElement("li");
-            elemento.textContent = i;
-            solu.appendChild(elemento);
-        }
+        let elemento = document.createElement("li");
+        elemento.textContent = i;
+        solu.appendChild(elemento);
+    }
 }
 
 /* 4. Escribe un documento HTML empleando JavaScript que pida un número en una ventana emergente y muestre en una tabla, una lista ordenada (<ol><li>) con los números impares del 1 hasta ese número, y una lista no ordenada (<ul><li>) con los números pares del 1 hasta ese número */
 
 function ejercicio4 () {
+    let solu = document.getElementById("solucion")
+    let num = parseInt(prompt("Introduce un número"))
 
+    for (let i = 1; i <= num; i++) {
+        let elemento = document.createComment("li");
+        elemento.textContent = 1;
+        solu.appendChild(elemento);
+    }
 }
 
 /* 5. Crea un script que muestre los números enteros del 1 al 5, con sus secuencias anteriores. */
